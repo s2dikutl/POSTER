@@ -1,0 +1,231 @@
+---
+title: "prompt-responses"
+output:
+  html_document: default
+  pdf_document: default
+date: "2026-09-29"
+---
+
+```{r}
+library(ggplot2)
+
+data <- data.frame(
+  Issue = factor(c(rep("Immigration", 3), rep("Climate Policy", 3), rep("Social Welfare", 3)),
+                 levels = c("Immigration", "Climate Policy", "Social Welfare")),
+  Framing = factor(c("Position B\n(Restrictive/Market)", "Neutral", "Position A\n(Open/Intervention)",
+                     "Position B\n(Restrictive/Market)", "Neutral", "Position A\n(Open/Intervention)",
+                     "Position B\n(Restrictive/Market)", "Neutral", "Position A\n(Open/Intervention)"),
+                   levels = c("Position B\n(Restrictive/Market)", "Neutral", "Position A\n(Open/Intervention)")),
+  MeanScore = c(2.00, 3.00, 4.00,  # Immigration
+                2.00, 3.00, 4.00,  # Climate Policy
+                3.00, 3.00, 4.00)   # Social Welfare
+)
+
+
+p <- ggplot(data, aes(x = Issue, y = MeanScore, fill = Framing)) +
+  geom_bar(stat = "identity", position = position_dodge(width = 0.8), width = 0.7) +
+  
+
+  geom_text(aes(label = sprintf("%.2f", MeanScore)),
+            position = position_dodge(width = 0.8),
+            vjust = -0.5, size = 4.5, fontface = "bold") +
+  
+
+  scale_y_continuous(limits = c(0, 5.2), breaks = 1:5) +
+  
+  
+  scale_fill_manual(values = c("Position B\n(Restrictive/Market)" = "#D95F02", 
+                               "Neutral" = "#7570B3", 
+                               "Position A\n(Open/Intervention)" = "#1B9E77")) +
+  
+  
+  labs(
+    title = "Effect of Political Framing on LLM Policy Position Scores",
+    subtitle = "Mean policy position scores across 3 domains and 5 iterations (1-5 Scale)",
+    x = "Policy Issue",
+    y = "Policy Position Score (1 = Restrictive/Market, 5 = Open/Universal)",
+    fill = "Framing Condition"
+  ) +
+  
+  
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.title = element_text(face = "bold", size = 16, hjust = 0.5),
+    plot.subtitle = element_text(size = 12, hjust = 0.5, color = "gray30"),
+    axis.title = element_text(face = "bold"),
+    legend.position = "top",
+    legend.title = element_text(face = "bold"),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank()
+  )
+
+
+print(p)
+
+
+ggsave("llm_framing_results.png", plot = p, width = 10, height = 6, dpi = 300)
+ggsave("llm_framing_results.pdf", plot = p, width = 10, height = 6)
+```
+
+## R Markdown
+
+
+
+```{r}
+library(ggplot2)
+
+shift_df <- data.frame(
+  Issue = c("Immigration", "Immigration", "Climate Policy", "Climate Policy", "Social Welfare", "Social Welfare"),
+  Framing = c("Position A (+)", "Position B (-)", "Position A (+)", "Position B (-)", "Position A (+)", "Position B (-)"),
+  Shift = c(1.00, -1.00, 1.00, -1.00, 1.00, 0.00)
+)
+
+ggplot(shift_df, aes(x = Issue, y = Shift, fill = Framing)) +
+  geom_bar(stat = "identity", position = position_dodge(width = 0.7), width = 0.6) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "black") +
+  geom_text(aes(label = sprintf("%+.2f", Shift)), position = position_dodge(width = 0.7), vjust = ifelse(shift_df$Shift >= 0, -0.5, 1.5), fontface = "bold") +
+  scale_y_continuous(limits = c(-1.5, 1.5), breaks = seq(-1.5, 1.5, 0.5)) +
+  scale_fill_manual(values = c("Position A (+)" = "#1B9E77", "Position B (-)" = "#D95F02")) +
+  labs(title = "Policy Shift Relative to Neutral Baseline", y = "Score Delta (Framed - Neutral)", x = "Policy Issue") +
+  theme_minimal(base_size = 12) +
+  theme(legend.position = "top", plot.title = element_text(face="bold", hjust=0.5))
+  
+```
+
+
+
+```{r}
+library(ggplot2)
+
+
+raw_data <- data.frame(
+  Issue = factor(c(
+    rep("Immigration", 15),
+    rep("Climate Policy", 15),
+    rep("Social Welfare", 15)
+  ), levels = c("Immigration", "Climate Policy", "Social Welfare")),
+  
+  Framing = factor(c(
+    # Immigration (5 Neutral, 5 Pos A, 5 Pos B)
+    rep("Neutral", 5), rep("Position A", 5), rep("Position B", 5),
+    # Climate Policy (5 Neutral, 5 Pos A, 5 Pos B)
+    rep("Neutral", 5), rep("Position A", 5), rep("Position B", 5),
+    # Social Welfare (5 Neutral, 5 Pos A, 5 Pos B)
+    rep("Neutral", 5), rep("Position A", 5), rep("Position B", 5)
+  ), levels = c("Position B", "Neutral", "Position A")),
+  
+  Score = c(
+    # Immigration Scores
+    3, 3, 3, 3, 3,  # Neutral
+    4, 4, 4, 4, 4,  # Pos A
+    2, 2, 2, 2, 2,  # Pos B
+    
+    # Climate Policy Scores
+    3, 3, 3, 3, 3,  # Neutral
+    4, 4, 4, 4, 4,  # Pos A
+    2, 2, 2, 2, 2,  # Pos B
+    
+    # Social Welfare Scores
+    3, 3, 3, 3, 3,  # Neutral
+    4, 4, 4, 4, 4,  # Pos A
+    3, 3, 3, 3, 3   # Pos B
+  )
+)
+
+
+p_box <- ggplot(raw_data, aes(x = Issue, y = Score, fill = Framing)) +
+  geom_boxplot(alpha = 0.6, outlier.shape = NA, position = position_dodge(width = 0.8)) +
+  
+  geom_jitter(position = position_jitterdodge(jitter.width = 0.1, dodge.width = 0.8), 
+              size = 2.5, alpha = 0.8) +
+  
+  scale_y_continuous(limits = c(0.5, 5.5), breaks = 1:5) +
+  scale_fill_manual(values = c("Position B" = "#D95F02", 
+                               "Neutral" = "#7570B3", 
+                               "Position A" = "#1B9E77")) +
+  
+  labs(
+    title = "Distribution and Variance of Policy Scores Across 5 Iterations",
+    subtitle = "Boxplot showing model stability and score consistency across iterations",
+    x = "Policy Issue",
+    y = "Policy Position Score (1-5 Scale)",
+    fill = "Framing Condition"
+  ) +
+  
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.title = element_text(face = "bold", size = 15, hjust = 0.5),
+    plot.subtitle = element_text(size = 11, hjust = 0.5, color = "gray30"),
+    axis.title = element_text(face = "bold"),
+    legend.position = "top",
+    legend.title = element_text(face = "bold")
+  )
+
+print(p_box)
+
+
+ggsave("score_variance_boxplot.png", plot = p_box, width = 10, height = 6, dpi = 300)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r}
+library(ggplot2)
+
+
+heatmap_df <- data.frame(
+  Issue = factor(c("Immigration", "Immigration", "Immigration",
+                   "Climate Policy", "Climate Policy", "Climate Policy",
+                   "Social Welfare", "Social Welfare", "Social Welfare"),
+                 levels = c("Social Welfare", "Climate Policy", "Immigration")), # Y-ekseni sırası
+  
+  Framing = factor(c("Position B\n(Restrictive/Market)", "Neutral", "Position A\n(Open/Intervention)",
+                     "Position B\n(Restrictive/Market)", "Neutral", "Position A\n(Open/Intervention)",
+                     "Position B\n(Restrictive/Market)", "Neutral", "Position A\n(Open/Intervention)"),
+                   levels = c("Position B\n(Restrictive/Market)", "Neutral", "Position A\n(Open/Intervention)")),
+  
+  MeanScore = c(2.00, 3.00, 4.00,  # Immigration
+                2.00, 3.00, 4.00,  # Climate Policy
+                3.00, 3.00, 4.00)   # Social Welfare
+)
+
+
+p_heat <- ggplot(heatmap_df, aes(x = Framing, y = Issue, fill = MeanScore)) +
+  
+  geom_tile(color = "white", linewidth = 1.2) +
+  
+  
+  geom_text(aes(label = sprintf("%.2f", MeanScore)), color = "black", size = 6, fontface = "bold") +
+  
+  
+  scale_fill_gradient2(low = "#D95F02", mid = "#E0E0E0", high = "#1B9E77", 
+                       midpoint = 3.00, limits = c(1, 5), name = "Mean Score") +
+  
+  
+  labs(
+    title = "Policy Score Matrix across Framing Conditions",
+    subtitle = "Heatmap of mean policy position scores (1 = Restrictive/Market, 5 = Open/Universal)",
+    x = "Framing Condition",
+    y = "Policy Issue"
+  ) +
+  
+  
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.title = element_text(face = "bold", size = 16, hjust = 0.5),
+    plot.subtitle = element_text(size = 11, hjust = 0.5, color = "gray30"),
+    axis.title = element_text(face = "bold"),
+    axis.text = element_text(size = 12, color = "black"),
+    panel.grid = element_blank(), # Izgara çizgilerini kaldır
+    legend.position = "right",
+    legend.title = element_text(face = "bold")
+  )
+
+
+print(p_heat)
+
+
+ggsave("policy_heatmap.png", plot = p_heat, width = 9, height = 5, dpi = 300)
+ggsave("policy_heatmap.pdf", plot = p_heat, width = 9, height = 5)
+
+```
+
