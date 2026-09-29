@@ -19,3 +19,5 @@ This repository contains the dataset, automated judge evaluation rubrics, and R 
 - `data/`: Contains raw LLM outputs and evaluated judge scores[cite: 2].
 - `scripts/`: R scripts (`ggplot2`) used for data processing and figure generation.
 - `figures/`: High-resolution figures generated for the research poster[cite: 1, 3, 4, 5, 6].
+
+DILARA ELIF KUTLU
