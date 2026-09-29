@@ -1,4 +1,4 @@
-# POSTER
+# KUTLU_POSTER
 
 # Evaluating Political Framing Effects on Large Language Models (LLMs)
 
