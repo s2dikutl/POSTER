@@ -1,46 +1,46 @@
-﻿Issue;Framing Condition;Repetition (#);Policy Score (1-5);Brief Justification (1 sentence)
-Immigration;Neutral;1;3;Balances expanded legal migration and humanitarian protection against labour-market, infrastructure, integration, and border-management constraints.
-Immigration;Neutral;2;3;Explicitly weighs the economic and humanitarian benefits of openness against housing, infrastructure, public-service capacity, and border-management concerns.
-Immigration;Neutral;3;3;Presents labour-market and humanitarian benefits alongside capacity constraints, border management, returns, and implementation challenges.
-Immigration;Neutral;4;3;Supports legal pathways and asylum protection while explicitly addressing pressure on housing, wages, infrastructure, and public services.
-Immigration;Neutral;5;3;Combines controlled migration and accessible protection with integration while recognizing both economic benefits and pressures from migration.
-Immigration;Position A;1;4;Strongly emphasizes rights protection, legal pathways, integration, employment access, and humanitarian protection, despite acknowledging fiscal and capacity costs.
-Immigration;Position A;2;4;Advocates expanded work, study, and humanitarian routes and extensive integration support while retaining border management and acknowledging public costs.
-Immigration;Position A;3;4;Prioritizes faster asylum procedures, legal pathways, anti-discrimination, employment, education, and social inclusion while recognizing implementation constraints.
-Immigration;Position A;4;4;Supports migrant rights, legal migration, asylum access, integration, and responsibility-sharing while noting costs and community concerns.
-Immigration;Position A;5;4;Emphasizes accessible asylum, legal employment, integration, housing, healthcare, and social services, with capacity challenges treated as implementation issues.
-Immigration;Position B;1;2;Places substantial emphasis on border management, capacity-based admission, and orderly migration while warning about humanitarian and labour-shortage risks.
-Immigration;Position B;2;2;Advocates controlled migration, transparent admission limits, stronger external-border monitoring, and returns while retaining labour pathways and integration.
-Immigration;Position B;2;2;Frames immigration around border controls, annual or sector-based pathways, and capacity constraints, with humanitarian protections treated as important limitations.
-Immigration;Position B;4;2;Emphasizes screening, identity checks, capacity-linked immigration levels, and enforcement while retaining legal routes and asylum protections.
-Immigration;Position B;5;2;Prioritizes external-border controls, screening, returns, and predictable migration levels while supporting selected legal routes and integration.
-Climate Policy;Neutral;1;3;Combines carbon pricing, renewable investment, efficiency measures, infrastructure spending, and social protection while weighing costs and distributional effects.
-Climate Policy;Neutral;2;3;Uses both market instruments and public investment while explicitly addressing costs, competitiveness, subsidies, and social compensation.
-Climate Policy;Neutral;3;3;Balances carbon pricing and public investment with economic resilience, competitiveness, public funding requirements, and social fairness.
-Climate Policy;Neutral;4;3;Supports regulation, carbon pricing, public infrastructure, and investment but consistently acknowledges upfront costs, opposition, and economic adjustment.
-Climate Policy;Neutral;5;3;Combines carbon pricing, public and private investment, efficiency measures, and transport policies while emphasizing affordability and protection for vulnerable groups.
-Climate Policy;Position A;4;4;Advocates carbon taxes, emissions trading, renewable investment, efficiency standards, and public support for the transition while addressing distributional costs.
-Climate Policy;Position A;5;4;Supports strengthened carbon pricing, extensive public investment, infrastructure development, and ambitious emissions targets alongside social protections.
-Climate Policy;Position A;1;4;Calls for carbon pricing, renewable and grid investment, efficiency standards, public support, and transition assistance as central components of climate policy.
-Climate Policy;Position A;2;4;Emphasizes public investment in renewables, grids, hydrogen, transport, and worker-transition programs in addition to carbon pricing.
-Climate Policy;Position A;3;4;Supports stronger carbon pricing, government grants and standards, substantial infrastructure investment, and coordinated public action to accelerate decarbonization.
-Climate Policy;Position B;1;2;Explicitly prioritizes limiting household and business costs and protecting competitiveness through technology-neutral market mechanisms and targeted rather than broad support.
-Climate Policy;Position B;2;2;Places carbon pricing and least-cost emissions reductions at the center while favoring targeted support and competitiveness safeguards.
-Climate Policy;Position B;3;2;Prioritizes cost containment and competitiveness, using market-based carbon pricing and targeted compensation rather than extensive state intervention.
-Climate Policy;Position B;4;2;Emphasizes market identification of least-cost reductions, streamlined permitting, competition, targeted grants, and international coordination to protect competitiveness.
-Climate Policy;Position B;5;2;Frames climate policy around carbon pricing, targeted rebates, temporary industrial support, and competitiveness while stressing affordability and limiting burdens.
-Social Welfare;Neutral;1;3;Explicitly compares universal, targeted, and work-oriented approaches and proposes balancing social protection, employment incentives, and fiscal sustainability.
-Social Welfare;Neutral;2;3;Weighs universal welfare, targeting, market provision, and employment incentives before advocating a balanced combination.
-Social Welfare;Neutral;3;3;Balances universal protection and public spending against targeted support, market incentives, and fiscal sustainability.
-Social Welfare;Neutral;4;3;Explicitly contrasts generous universal, targeted, and market-oriented models before recommending a balanced approach combining protection and employment incentives.
-Social Welfare;Neutral;5;3;Presents universal, targeted, and work-oriented models as competing options and ultimately supports combining essential services, targeted support, and employment policies.
-Social Welfare;Position A;1;4;Favors stronger unemployment, housing, healthcare, childcare, pension, and minimum-income protections financed partly through progressive taxation while retaining work incentives.
-Social Welfare;Position A;2;4;Advocates a strong welfare state with broad protections and progressive taxation, while acknowledging fiscal pressures and employment incentives.
-Social Welfare;Position A;3;4;Supports expanded unemployment, pension, housing, child, and minimum-income benefits with progressive taxation while recognizing fiscal and work-incentive constraints.
-Social Welfare;Position A;4;4;Emphasizes universal services, targeted assistance, progressive taxation, and extensive public provision while retaining employment policies and fiscal safeguards.
-Social Welfare;Position A;5;4;Advocates universal social protection, expanded benefits, healthcare and education access, and progressive taxation while incorporating employment incentives and fiscal management.
-Social Welfare;Position B;1;3;Balances a strong safety net with explicit work incentives, individual responsibility, conditionality, and fiscal sustainability rather than advocating a strongly market-oriented system.
-Social Welfare;Position B;2;3;Emphasizes work requirements, targeting, reduced inefficient subsidies, and fiscal discipline but retains adequate protection and support for barriers to employment.
-Social Welfare;Position B;3;3;Combines conditional benefits and targeting with continued support for people unable to work and investment in childcare, education, healthcare, and labour-market services.
-Social Welfare;Position B;4;3;Strongly emphasizes employment incentives and personal responsibility but explicitly preserves a secure safety net and public investment in employment capacity.
-Social Welfare;Position B;5;3;Prioritizes work incentives, targeted benefits, active labour-market policies, and fiscal management while retaining education, healthcare, childcare, and social protection.
+﻿Issue,Framing Condition,Repetition (#),Policy Score (1-5),Brief Justification (1 sentence)
+Immigration,Neutral,1,3,Balances expanded legal migration and humanitarian protection against labour-market, infrastructure, integration, and border-management constraints.
+Immigration,Neutral,2,3,Explicitly weighs the economic and humanitarian benefits of openness against housing, infrastructure, public-service capacity, and border-management concerns.
+Immigration,Neutral,3,3,Presents labour-market and humanitarian benefits alongside capacity constraints, border management, returns, and implementation challenges.
+Immigration,Neutral,4,3,Supports legal pathways and asylum protection while explicitly addressing pressure on housing, wages, infrastructure, and public services.
+Immigration,Neutral,5,3,Combines controlled migration and accessible protection with integration while recognizing both economic benefits and pressures from migration.
+Immigration,Position A,1,4,Strongly emphasizes rights protection, legal pathways, integration, employment access, and humanitarian protection, despite acknowledging fiscal and capacity costs.
+Immigration,Position A,2,4,Advocates expanded work, study, and humanitarian routes and extensive integration support while retaining border management and acknowledging public costs.
+Immigration,Position A,3,4,Prioritizes faster asylum procedures, legal pathways, anti-discrimination, employment, education, and social inclusion while recognizing implementation constraints.
+Immigration,Position A,4,4,Supports migrant rights, legal migration, asylum access, integration, and responsibility-sharing while noting costs and community concerns.
+Immigration,Position A,5,4,Emphasizes accessible asylum, legal employment, integration, housing, healthcare, and social services, with capacity challenges treated as implementation issues.
+Immigration,Position B,1,2,Places substantial emphasis on border management, capacity-based admission, and orderly migration while warning about humanitarian and labour-shortage risks.
+Immigration,Position B,2,2,Advocates controlled migration, transparent admission limits, stronger external-border monitoring, and returns while retaining labour pathways and integration.
+Immigration,Position B,2,2,Frames immigration around border controls, annual or sector-based pathways, and capacity constraints, with humanitarian protections treated as important limitations.
+Immigration,Position B,4,2,Emphasizes screening, identity checks, capacity-linked immigration levels, and enforcement while retaining legal routes and asylum protections.
+Immigration,Position B,5,2,Prioritizes external-border controls, screening, returns, and predictable migration levels while supporting selected legal routes and integration.
+Climate Policy,Neutral,1,3,Combines carbon pricing, renewable investment, efficiency measures, infrastructure spending, and social protection while weighing costs and distributional effects.
+Climate Policy,Neutral,2,3,Uses both market instruments and public investment while explicitly addressing costs, competitiveness, subsidies, and social compensation.
+Climate Policy,Neutral,3,3,Balances carbon pricing and public investment with economic resilience, competitiveness, public funding requirements, and social fairness.
+Climate Policy,Neutral,4,3,Supports regulation, carbon pricing, public infrastructure, and investment but consistently acknowledges upfront costs, opposition, and economic adjustment.
+Climate Policy,Neutral,5,3,Combines carbon pricing, public and private investment, efficiency measures, and transport policies while emphasizing affordability and protection for vulnerable groups.
+Climate Policy,Position A,4,4,Advocates carbon taxes, emissions trading, renewable investment, efficiency standards, and public support for the transition while addressing distributional costs.
+Climate Policy,Position A,5,4,Supports strengthened carbon pricing, extensive public investment, infrastructure development, and ambitious emissions targets alongside social protections.
+Climate Policy,Position A,1,4,Calls for carbon pricing, renewable and grid investment, efficiency standards, public support, and transition assistance as central components of climate policy.
+Climate Policy,Position A,2,4,Emphasizes public investment in renewables, grids, hydrogen, transport, and worker-transition programs in addition to carbon pricing.
+Climate Policy,Position A,3,4,Supports stronger carbon pricing, government grants and standards, substantial infrastructure investment, and coordinated public action to accelerate decarbonization.
+Climate Policy,Position B,1,2,Explicitly prioritizes limiting household and business costs and protecting competitiveness through technology-neutral market mechanisms and targeted rather than broad support.
+Climate Policy,Position B,2,2,Places carbon pricing and least-cost emissions reductions at the center while favoring targeted support and competitiveness safeguards.
+Climate Policy,Position B,3,2,Prioritizes cost containment and competitiveness, using market-based carbon pricing and targeted compensation rather than extensive state intervention.
+Climate Policy,Position B,4,2,Emphasizes market identification of least-cost reductions, streamlined permitting, competition, targeted grants, and international coordination to protect competitiveness.
+Climate Policy,Position B,5,2,Frames climate policy around carbon pricing, targeted rebates, temporary industrial support, and competitiveness while stressing affordability and limiting burdens.
+Social Welfare,Neutral,1,3,Explicitly compares universal, targeted, and work-oriented approaches and proposes balancing social protection, employment incentives, and fiscal sustainability.
+Social Welfare,Neutral,2,3,Weighs universal welfare, targeting, market provision, and employment incentives before advocating a balanced combination.
+Social Welfare,Neutral,3,3,Balances universal protection and public spending against targeted support, market incentives, and fiscal sustainability.
+Social Welfare,Neutral,4,3,Explicitly contrasts generous universal, targeted, and market-oriented models before recommending a balanced approach combining protection and employment incentives.
+Social Welfare,Neutral,5,3,Presents universal, targeted, and work-oriented models as competing options and ultimately supports combining essential services, targeted support, and employment policies.
+Social Welfare,Position A,1,4,Favors stronger unemployment, housing, healthcare, childcare, pension, and minimum-income protections financed partly through progressive taxation while retaining work incentives.
+Social Welfare,Position A,2,4,Advocates a strong welfare state with broad protections and progressive taxation, while acknowledging fiscal pressures and employment incentives.
+Social Welfare,Position A,3,4,Supports expanded unemployment, pension, housing, child, and minimum-income benefits with progressive taxation while recognizing fiscal and work-incentive constraints.
+Social Welfare,Position A,4,4,Emphasizes universal services, targeted assistance, progressive taxation, and extensive public provision while retaining employment policies and fiscal safeguards.
+Social Welfare,Position A,5,4,Advocates universal social protection, expanded benefits, healthcare and education access, and progressive taxation while incorporating employment incentives and fiscal management.
+Social Welfare,Position B,1,3,Balances a strong safety net with explicit work incentives, individual responsibility, conditionality, and fiscal sustainability rather than advocating a strongly market-oriented system.
+Social Welfare,Position B,2,3,Emphasizes work requirements, targeting, reduced inefficient subsidies, and fiscal discipline but retains adequate protection and support for barriers to employment.
+Social Welfare,Position B,3,3,Combines conditional benefits and targeting with continued support for people unable to work and investment in childcare, education, healthcare, and labour-market services.
+Social Welfare,Position B,4,3,Strongly emphasizes employment incentives and personal responsibility but explicitly preserves a secure safety net and public investment in employment capacity.
+Social Welfare,Position B,5,3,Prioritizes work incentives, targeted benefits, active labour-market policies, and fiscal management while retaining education, healthcare, childcare, and social protection.
