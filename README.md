@@ -1,4 +1,9 @@
 # KUTLU_POSTER
+**Author:** Dilara Elif KUTLU 
+**Registration Number:** 1868317
+**Affiliation:** University of Trier – English Linguistics  
+**Course / Project:** NLP
+**Date:** 30th September 2026
 
 # Evaluating Political Framing Effects on Large Language Models (LLMs)
 
