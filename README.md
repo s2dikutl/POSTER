@@ -25,4 +25,4 @@ This repository contains the dataset, automated judge evaluation rubrics, and R 
 - `scripts/`: R scripts (`ggplot2`) used for data processing and figure generation.
 - `figures/`: High-resolution figures generated for the research poster[cite: 1, 3, 4, 5, 6].
 
-DILARA ELIF KUTLU
+**ChatGPT Conversation Log:** (https://chatgpt.com/share/6abbad8b-c038-83eb-831f-8290e5618744)
