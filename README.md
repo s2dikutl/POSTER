@@ -11,21 +11,21 @@ This repository contains the dataset, automated judge evaluation rubrics, and R 
 
 ## Research Overview
 - **Policy Domains:** Immigration, Climate Policy, Social Welfare
-- **Framing Conditions:** Neutral, Position A (Progressive/Open), Position B (Restrictive/Market)
+- **Framing Conditions:** Neutral, Position A: Open / stronger-interventionist policy orientation, Position B: Restrictive / market-oriented policy orientation
 - **Iterations:** 5 repetitions per condition (Total = 45 responses)
 - **Evaluation Method:** LLM-as-a-Judge (1-5 Policy Position Scale)
 
 ## Key Findings
 1. **Framing Sensitivity:** Prompts with political framing successfully induced policy position shifts compared to neutral baselines.
-2. **Symmetric vs. Asymmetric Shifts:** Symmetric shifts (+1.00 / -1.00) were observed in Immigration and Climate Policy. In Social Welfare, the model resisted restrictive framing (Position B yielded 3.00, resulting in a +0.00 shift).
-3. **Score Consistency: All five repetitions yielded identical policy-position scores within each issue × framing condition.
+2. **Framing Effects:** Immigration and Climate Policy showed +1.00 shifts under Position A and −1.00 shifts under Position B. Social Welfare shifted to 4.00 under Position A but remained at 3.00 under Position B.
+3. **Score Consistency:** All five repetitions yielded identical policy-position scores within each issue × framing condition.
 
 ## Repository Contents
-llm_judge_scores.csv: LLM-as-a-Judge policy-position scores and brief justifications.
-RESPONSES-TABLE.Rmd: R code used for response tables and analysis.
-PROMPTS.pdf: Experimental prompts and framing conditions.
-RESPONSES.pdf: Model responses.
-distribution.png, effect-of-political-framing.png, policy-score-matrix.png, policy-shift.png: Research figures.
-1868317_appendix_poster.pdf: Poster appendix.
+**llm_judge_scores.csv:** LLM-as-a-Judge policy-position scores and brief justifications.
+**RESPONSES-TABLE.Rmd:** R code used for response tables and analysis.
+**PROMPTS.pdf:** Experimental prompts and framing conditions.
+**RESPONSES.pdf:** Model responses.
+**distribution.png, effect-of-political-framing.png, policy-score-matrix.png, policy-shift.png:** Research figures.
+**1868317_appendix_poster.pdf:** Poster appendix.
 
 **ChatGPT Conversation Log:** (https://chatgpt.com/share/6abbad8b-c038-83eb-831f-8290e5618744)
