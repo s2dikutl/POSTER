@@ -21,8 +21,11 @@ This repository contains the dataset, automated judge evaluation rubrics, and R 
 3. **Score Consistency: All five repetitions yielded identical policy-position scores within each issue × framing condition.
 
 ## Repository Contents
-- `data/`: Contains raw LLM outputs and evaluated judge scores.
-- `scripts/`: R scripts (`ggplot2`) used for data processing and figure generation.
-- `figures/`: High-resolution figures generated for the research poster.
+llm_judge_scores.csv: LLM-as-a-Judge policy-position scores and brief justifications.
+RESPONSES-TABLE.Rmd: R code used for response tables and analysis.
+PROMPTS.pdf: Experimental prompts and framing conditions.
+RESPONSES.pdf: Model responses.
+distribution.png, effect-of-political-framing.png, policy-score-matrix.png, policy-shift.png: Research figures.
+1868317_appendix_poster.pdf: Poster appendix.
 
 **ChatGPT Conversation Log:** (https://chatgpt.com/share/6abbad8b-c038-83eb-831f-8290e5618744)
