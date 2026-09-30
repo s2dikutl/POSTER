@@ -18,7 +18,7 @@ This repository contains the dataset, automated judge evaluation rubrics, and R 
 ## Key Findings
 1. **Framing Sensitivity:** Prompts with political framing successfully induced policy position shifts compared to neutral baselines.
 2. **Symmetric vs. Asymmetric Shifts:** Symmetric shifts (+1.00 / -1.00) were observed in Immigration and Climate Policy. In Social Welfare, the model resisted restrictive framing (Position B yielded 3.00, resulting in a +0.00 shift).
-3. **High Reproducibility:** Low variance across 5 iterations confirmed high model response consistency.
+3. **Score Consistency: All five repetitions yielded identical policy-position scores within each issue × framing condition.
 
 ## Repository Contents
 - `data/`: Contains raw LLM outputs and evaluated judge scores.
